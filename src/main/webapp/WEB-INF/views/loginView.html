@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>login view</title>
+</head>
+<body>
+  <table>
+    <tr th:each="todo : "${logins}">
+      <td th:text="${login.id}" />
+      <td th:text="${login.name}" />
+      <td th:text="${login.password}" />}
+    </tr>
+  </table>
+</body>
+</html>
+

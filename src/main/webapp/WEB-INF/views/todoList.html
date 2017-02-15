@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>todo list</title>
+</head>
+<body>
+  <table>
+    <tr><th>id:</th><th>task:</th></tr>
+  <tbody>
+    <tr th:each="todo : ${todos}">
+      <td th:text="${todo.id}" />
+      <td th:text="${todo.task}" />
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>
+

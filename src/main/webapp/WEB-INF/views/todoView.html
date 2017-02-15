@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>todo view</title>
+</head>
+<body>
+  <table>
+    <tr th:each="todo : "${todos}">
+      <td th:text="${todo.id}" />
+      <td th:text="${todo.task}" />}
+    </tr>
+  </table>
+</body>
+</html>
+
